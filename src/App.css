@@ -1,16 +1,79 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f8;
 }
 
-.landing {
-  background-image: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  color: white;
+/* NAVBAR */
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cart-link {
+  position: relative;
+}
+
+.cart-badge {
+  background: red;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+/* HOME PAGE */
+.home-container {
+  height: 90vh;
+  display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to right, #e8f5e9, #f1f8e9);
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  max-width: 500px;
+  margin: 0 auto 25px;
+  color: #555;
+}
+
+.primary-btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #2e7d32;
 }
